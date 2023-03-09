@@ -1,7 +1,10 @@
 Based on :
-    esp-idf 4.4.3 https://github.com/espressif/esp-idf/tree/v4.4.3
-    micropython https://github.com/micropython/micropython
-    russhughes/st7789s3_esp_lcd https://github.com/russhughes/st7789s3_esp_lcd
+* esp-idf 4.4.3 https://github.com/espressif/esp-idf/tree/v4.4.3
+
+* micropython https://github.com/micropython/micropython
+
+* russhughes/st7789s3_esp_lcd https://github.com/russhughes/st7789s3_esp_lcd
+
 
 # How to flash
 
