@@ -3,15 +3,21 @@
 import st7789
 import tft_config
 import gc
+import time
+
+pic_list = ["pic_1.jpg", "pic_2.jpg", "pic_3.jpg", "pic_4.jpg", "pic_5.jpg"]
 
 
 def main():
     try:
         tft = tft_config.config(rotation=1)
         tft.init()
-        tft.jpg("pic_1.jpg", 0, 0)
-        tft.show()
-        gc.collect()
+        while True:
+            for pic in pic_list:
+                tft.jpg(pic, 0, 0)
+                tft.show()
+                gc.collect()
+                time.sleep(1)
 
     except BaseException as err:
         err_type = err.__class__.__name__
