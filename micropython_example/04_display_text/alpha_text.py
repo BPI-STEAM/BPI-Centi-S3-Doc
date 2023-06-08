@@ -14,7 +14,7 @@ TRANSPARENT
 Custom RGB colors:
 color565(255,255,255)
 """
-fg = st7789.RED
+fg = st7789.BLACK
 bg = st7789.TRANSPARENT
 text_x = 10
 text_y = 50
