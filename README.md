@@ -1,0 +1,1 @@
+![](drawio/BPI-Centi-S3_drawio.svg)
