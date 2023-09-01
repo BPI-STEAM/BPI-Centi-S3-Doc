@@ -3,7 +3,6 @@
 import st7789
 import tft_config
 import gc
-import time
 import vga1_bold_16x32
 
 fg = st7789.WHITE
