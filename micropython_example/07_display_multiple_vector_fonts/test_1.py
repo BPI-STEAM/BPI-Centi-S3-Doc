@@ -50,17 +50,17 @@ def main():
     try:
         tft = tft_config.config(rotation=1)
         tft.init()
-        jpg = 'pic_5.jpg'
+        jpg = 'pic_4.jpg'
         tft.jpg(jpg, 0, 0)
         text_x = 10
         text_y = 20
         text_list = [
-            " !\"#$%&'()*+,-./",
-            "0123456789:;<=>?",
-            "@ABCDEFGHIJKLMNO",
-            "PQRSTUVWXYZ[\]^_",
-            "`abcdefghijklmno",
-            "pqrstuvwxyz{|}~",
+            "!\"#$%&'()*",
+            "0123456789",
+            "ABCDEFGHI",
+            "PQRSTUVWX",
+            "abcdefghij",
+            "pqrstuvwxy",
             ]
 
         draw_rect_1 = DrawRect()
@@ -68,11 +68,11 @@ def main():
         draw_rect_3 = DrawRect()
         while True:
             for i in text_list:
-                draw_rect_1.rect(tft, gotheng, 0.8, i, (text_x, text_y),
+                draw_rect_1.rect(tft, romanc, 0.5, i, (text_x, text_y),
                                  fg=st7789.WHITE, bg=st7789.BLACK, alpha_text=255, alpha_rect=20)
-                draw_rect_2.rect(tft, italicc, 0.8, i, (text_x, text_y+32),
+                draw_rect_2.rect(tft, romanc, 1, i, (text_x, text_y+24),
                                  fg=st7789.WHITE, bg=st7789.BLACK, alpha_text=255, alpha_rect=40)
-                draw_rect_3.rect(tft, romanc, 0.8, i, (text_x, text_y + 64),
+                draw_rect_3.rect(tft, romanc, 1.5, i, (text_x, text_y + 64),
                                  fg=st7789.WHITE, bg=st7789.BLACK, alpha_text=255, alpha_rect=60)
                 tft.show()
                 time.sleep(0.5)
